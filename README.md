@@ -9,13 +9,13 @@
 
 - 🔭 I’m currently studying in **Sardar Vallabhbhai National Institute of Technology, Surat**
 
-- 🌱 I’m currently learning **AI APIs**
+- 🌱 I’m currently learning **AI**
 
 - 👯 I’m currently working on **something soon to be revealed...**
 
 - 🤝 I’m addicted to late night **cooooding**
 
-- 👨‍💻 All of my projects are available at [purvkabaria.vercel.app](purvkabaria.vercel.app)
+- 👨‍💻 All of my projects are available at [purvkabaria.netlify.app](purvkabaria.netlify.app)
 
 - 💬 Ask me about **reactjs, nextjs, firebase**
 
