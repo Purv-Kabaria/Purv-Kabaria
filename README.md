@@ -10,9 +10,9 @@
   <img align="left" alt="Purv | X" width="30" src="https://www.svgrepo.com/show/475689/twitter-color.svg" />
 </a>
 
-![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&color=green)
-![Visitors](https://visitcount.itsvg.in/api?id=Purv-Kabaria&icon=0&color=0)
-![Followers](https://img.shields.io/github/followers/Purv-Kabaria?label=Followers&style=social)
+![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&label=Views&color=1f6feb&style=flat)
+![Followers](https://img.shields.io/github/followers/Purv-Kabaria?label=Followers&style=flat&color=1f6feb)
+![Stars](https://img.shields.io/github/stars/Purv-Kabaria?affiliations=OWNER&style=flat&color=1f6feb)
 
 <br>
 <img align="right" width=200px height=200px alt="side_sticker" src="https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif" />
