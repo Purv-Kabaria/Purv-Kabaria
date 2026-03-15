@@ -6,9 +6,11 @@
 <a href="https://www.instagram.com/purv.dev/">
   <img align="left" alt="Purv | Instagram" width="30" src="https://user-images.githubusercontent.com/83356501/129452050-d0157287-2350-4999-95b9-ea9e8a27639b.png" />
 </a>
+<a href="https://x.com/purvdev">
+  <img align="left" alt="Purv | X" width="30" src="https://www.svgrepo.com/show/475689/twitter-color.svg" />
+</a>
 
-![Visitor Count](https://visitcount.itsvg.in/api?id=Purv-Kabaria&icon=0&color=0)
-![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&color=blue)
+![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&color=green)
 
 <br>
 <img align="right" width=200px height=200px alt="side_sticker" src="https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif" />
@@ -51,4 +53,3 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
     <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Purv-Kabaria&theme=dark&layout=compact" /> 
   </a>
 </p>
-</a>
