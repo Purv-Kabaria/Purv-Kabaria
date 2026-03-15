@@ -11,6 +11,8 @@
 </a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&color=green)
+![Visitors](https://visitcount.itsvg.in/api?id=Purv-Kabaria&icon=0&color=0)
+![Followers](https://img.shields.io/github/followers/Purv-Kabaria?label=Followers&style=social)
 
 <br>
 <img align="right" width=200px height=200px alt="side_sticker" src="https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif" />
@@ -27,7 +29,7 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
 
 <p align="center">
   <a href="https://skillicons.dev">
-<img src="https://go-skill-icons.vercel.app/api/icons?i=anaconda,androidstudio,aws,bootstrap,c,cs,css,dart,django,docker,dynamodb,elasticsearch,expo,fastapi,figma,firebase,flask,flutter,gcp,git,github,githubactions,html,huggingface,ai,java,js,jupyter,kaggle,langchain,latex,mongodb,mysql,netlify,nextjs,nodejs,npm,ollama,opencv,postgres,postman,prisma,py,pygame,pytorch,qdrant,react,redis,seaborn,selenium,sklearn,sqlite,streamlit,s3,tailwind,tensorflow,threejs,typescript,vercel,vite,vscode,vuejs&perline=14" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=androidstudio,aws,bootstrap,c,celery,css,drizzle,django,docker,dynamodb,elasticsearch,expo,fastapi,figma,firebase,flask,gcp,git,github,githubactions,html,huggingface,java,js,langchain,mongodb,mysql,nextjs,nodejs,npm,ollama,opencv,postgres,postman,prisma,py,pygame,pytorch,qdrant,rabbitmq,react,redis,seaborn,selenium,sklearn,sqlite,streamlit,s3,tailwind,tensorflow,threejs,typescript,vercel,vite,vscode,vuejs&perline=14" />
 
   </a>
 </p>
