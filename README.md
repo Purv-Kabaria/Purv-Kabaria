@@ -20,7 +20,7 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
 
 <ul>
 <li> 🌱 I’m currently pursuing B.Tech in Computer Science & Engineering at NIT Surat </li>
-<li> 💼 Wanna colab on Projects? do reach, <a href="mailto:purvkabaria@gmail.com">email</a></li>
+<li> 💼 Wanna colab on Projects? Do reach via <a href="mailto:purvkabaria@gmail.com">email</a></li>
 <li> 💬 Ask me about anything, I am happy to help </li>
 <li> ⚡ Fun fact : The more you GRIND, the more you GET💫</li>
 </ul>
