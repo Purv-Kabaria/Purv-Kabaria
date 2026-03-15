@@ -1,11 +1,14 @@
-<h1> Hey, I’m Mihir! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
+<h1> Hey, I’m Purv! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
 
 <a href="https://www.linkedin.com/in/purv-kabaria/">
   <img align="left" alt="Purv | LinkedIn" width="30" src="https://www.svgrepo.com/show/448234/linkedin.svg" />
 </a>
+<a href="https://www.instagram.com/purv.dev/">
+  <img align="left" alt="Purv | Instagram" width="30" src="https://user-images.githubusercontent.com/83356501/129452050-d0157287-2350-4999-95b9-ea9e8a27639b.png" />
+</a>
 
-![counter](https://enn1fxhjqs0lr2a.m.pipedream.net)
-![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria)
+![Visitor Count](https://visitcount.itsvg.in/api?id=Purv-Kabaria&icon=0&color=0)
+![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&color=blue)
 
 <br>
 <img align="right" width=200px height=200px alt="side_sticker" src="https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif" />
@@ -18,6 +21,8 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
 <li> ⚡ Fun fact : The more you GRIND, the more you GET💫</li>
 </ul>
 
+<br>
+
 <p align="center">
   <a href="https://skillicons.dev">
 <img src="https://go-skill-icons.vercel.app/api/icons?i=anaconda,androidstudio,aws,bootstrap,c,cs,css,dart,django,docker,dynamodb,elasticsearch,expo,fastapi,figma,firebase,flask,flutter,gcp,git,github,githubactions,html,huggingface,ai,java,js,jupyter,kaggle,langchain,latex,mongodb,mysql,netlify,nextjs,nodejs,npm,ollama,opencv,postgres,postman,prisma,py,pygame,pytorch,qdrant,react,redis,seaborn,selenium,sklearn,sqlite,streamlit,s3,tailwind,tensorflow,threejs,typescript,vercel,vite,vscode,vuejs&perline=14" />
@@ -25,7 +30,7 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
   </a>
 </p>
 
-<h2>Mihir's Contribution Graph<h2>
+<h2>Purv's Contribution Graph<h2>
 
 <p align="center">
 <img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=Purv-Kabaria" />
@@ -35,7 +40,6 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
 <h2>GitHub Trophies<h2>
 
 <p align="center">
-<img width="800" src="https://github-profile-trophy.vercel.app/?username=Purv-Kabaria&column=7&margin-w=15&margin-h=15&no-bg=true&no-frame=true&theme=juicyfresh" />
 <br>
   <a href="https://github-readme-stats-sigma-five.vercel.app/api?username=Purv-Kabaria&show_icons=true&theme=tokyonight">
     <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Purv-Kabaria&show_icons=true&theme=tokyonight" />
@@ -48,14 +52,3 @@ Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learnin
   </a>
 </p>
 </a>
-
-## 3D Contribution Calendar 📅
-<br>
-<p align='center'>
-<img src="./profile-3d-contrib/profile-night-green.svg">
-</p>
-<hr>
-<h1>Github Contribution✨<h1>
-
-![snake gif](https://github.com/Purv-Kabaria/Purv-Kabaria/blob/output/github-contribution-grid-snake.svg)
-
