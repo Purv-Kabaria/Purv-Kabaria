@@ -18,6 +18,8 @@
 Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learning, GenAI and Agentic AI. I have participated in multiple hackathons all around the nation, and even organized a few. I have a strong background with Full Stack Development, DevOps and AI/ML. I enjoy collaborating with like-minded individual to create opportunities that push the boundaries of AI and human machine collaboration. Feel free to reach out via your favorite platform :)
 
 <br>
+<br>
+<br>
 
 <p align="center">
   <a href="https://skillicons.dev">
