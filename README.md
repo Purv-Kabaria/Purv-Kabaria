@@ -15,15 +15,7 @@
 ![Stars](https://img.shields.io/github/stars/Purv-Kabaria?affiliations=OWNER&style=flat&color=1f6feb)
 
 <br>
-<img align="right" width=200px height=200px alt="side_sticker" src="https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif" />
 Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learning, GenAI and Agentic AI. I have participated in multiple hackathons all around the nation, and even organized a few. I have a strong background with Full Stack Development, DevOps and AI/ML. I enjoy collaborating with like-minded individual to create opportunities that push the boundaries of AI and human machine collaboration. Feel free to reach out via your favorite platform :)
-
-<ul>
-<li> 🌱 I’m currently pursuing B.Tech in Computer Science & Engineering at NIT Surat </li>
-<li> 💼 Wanna colab on Projects? Do reach via <a href="mailto:purvkabaria@gmail.com">email</a></li>
-<li> 💬 Ask me about anything, I am happy to help </li>
-<li> ⚡ Fun fact : The more you GRIND, the more you GET💫</li>
-</ul>
 
 <br>
 
