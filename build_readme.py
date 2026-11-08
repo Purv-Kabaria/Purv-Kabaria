@@ -15,6 +15,7 @@ import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
+from urllib.parse import urlparse
 from datetime import datetime
 from pathlib import Path
 
@@ -36,11 +37,34 @@ def fetch(url: str, data: bytes | None = None, headers: dict | None = None) -> b
         return r.read()
 
 
+ALLOWED_HOSTS = {"github.com", "purvkabaria.netlify.app"}
+
+
+def clean(text: str) -> str:
+    """Make an external string safe to drop into Markdown inside an auto-committed README.
+
+    Removes comment markers (which could break the section markers), HTML angle
+    brackets, and Markdown link/image syntax, and collapses whitespace.
+    """
+    text = text.replace("<!--", "").replace("-->", "")
+    text = re.sub(r"[<>\[\]()`!\\|*_]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def safe_link(url: str) -> str:
+    u = urlparse(url.strip())
+    if u.scheme != "https" or u.hostname not in ALLOWED_HOSTS:
+        raise ValueError(f"refusing link {url!r}")
+    return u.geturl()
+
+
 def replace_section(text: str, name: str, body: str) -> str:
-    pattern = re.compile(rf"(<!-- {name} starts -->)(.*?)(<!-- {name} ends -->)", re.S)
-    if not pattern.search(text):
+    start, end = f"<!-- {name} starts -->", f"<!-- {name} ends -->"
+    i = text.find(start)
+    j = text.find(end, i + len(start)) if i != -1 else -1
+    if i == -1 or j == -1:
         raise ValueError(f"marker {name} missing from README")
-    return pattern.sub(lambda m: f"{m.group(1)}\n{body}\n{m.group(3)}", text)
+    return text[: i + len(start)] + f"\n{body}\n" + text[j:]
 
 
 # ── sections ─────────────────────────────────────────────────────────────────
@@ -74,10 +98,10 @@ def recent_work(limit: int = 5) -> str:
         if not commits:
             continue
         c = commits[0]["commit"]
-        msg = shorten(c["message"].splitlines()[0])
+        msg = shorten(clean(c["message"].splitlines()[0]))
         day = c["author"]["date"][:10]
-        name = DISPLAY_NAMES.get(repo["name"], repo["name"])
-        lines.append(f"[{name}]({repo['html_url']}): {msg} - {day}")
+        name = clean(DISPLAY_NAMES.get(repo["name"], repo["name"]))
+        lines.append(f"[{name}]({safe_link(repo['html_url'])}): {msg} - {clean(day)}")
         if len(lines) == limit:
             break
     if not lines:
@@ -92,8 +116,8 @@ def writing(limit: int = 5) -> str:
     root = ET.fromstring(fetch(FEED))
     lines = []
     for item in root.iter("item"):
-        title = item.findtext("title", "").strip()
-        link = item.findtext("link", "").strip()
+        title = clean(item.findtext("title", ""))
+        link = safe_link(item.findtext("link", ""))
         date = datetime.strptime(item.findtext("pubDate", "").strip(), "%a, %d %b %Y %H:%M:%S %Z").date()
         lines.append(f"[{title}]({link}) - {date.isoformat()}")
         if len(lines) == limit:
@@ -105,7 +129,7 @@ def writing(limit: int = 5) -> str:
 
 def codeforces() -> str:
     r = json.loads(fetch(f"https://codeforces.com/api/user.info?handles={CF_HANDLE}"))["result"][0]
-    return f"[Codeforces](https://codeforces.com/profile/{CF_HANDLE}): **{r['rating']}**, {r['rank'].title()} (max {r['maxRating']})"
+    return f"[Codeforces](https://codeforces.com/profile/{CF_HANDLE}): **{int(r['rating'])}**, {clean(r['rank']).title()} (max {int(r['maxRating'])})"
 
 
 def codechef() -> str:
@@ -122,7 +146,7 @@ def leetcode() -> str:
     q = {"query": f'{{userContestRanking(username:"{LC_HANDLE}"){{rating}} matchedUser(username:"{LC_HANDLE}"){{submitStats{{acSubmissionNum{{difficulty count}}}}}}}}'}
     d = json.loads(fetch("https://leetcode.com/graphql", json.dumps(q).encode(), {"Content-Type": "application/json", "Referer": "https://leetcode.com"}))["data"]
     solved = next(x["count"] for x in d["matchedUser"]["submitStats"]["acSubmissionNum"] if x["difficulty"] == "All")
-    return f"[LeetCode](https://leetcode.com/u/{LC_HANDLE}/): **{round(d['userContestRanking']['rating'])}**, {solved} solved"
+    return f"[LeetCode](https://leetcode.com/u/{LC_HANDLE}/): **{round(float(d['userContestRanking']['rating']))}**, {int(solved)} solved"
 
 
 def competitive(previous: str) -> str:

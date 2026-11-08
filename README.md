@@ -8,11 +8,11 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 
 #### Recently shipped
 <!-- recent_work starts -->
-[prometheus](https://github.com/Purv-Kabaria/prometheus): Make every number in the app and README defensible - 2026-11-08
+[prometheus](https://github.com/Purv-Kabaria/prometheus): Stop tracking create-next-app agent stubs - 2026-11-08
+
+[AssetFlow](https://github.com/Purv-Kabaria/Odoo-2026): Stop tracking local AI-assistant config; README is the project… - 2026-11-08
 
 [FinBridge](https://github.com/Purv-Kabaria/FinBridge): Call analysis: INT8 sentiment on the real path, whole-call sentiment… - 2026-11-08
-
-[AssetFlow](https://github.com/Purv-Kabaria/Odoo-2026): feat(notifications): gap-free SSE with replay and a shared subscriber… - 2026-11-06
 
 [business-entity-resolution](https://github.com/Purv-Kabaria/business-entity-resolution): Add documentation - 2026-11-06
 
