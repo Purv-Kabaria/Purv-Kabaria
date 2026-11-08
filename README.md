@@ -1,51 +1,27 @@
-<h1> Hey, I’m Purv! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
+## Hi, I'm Purv 👋
 
-<a href="https://www.linkedin.com/in/purv-kabaria/">
-  <img align="left" alt="Purv | LinkedIn" width="30" src="https://www.svgrepo.com/show/448234/linkedin.svg" />
-</a>
-<a href="https://www.instagram.com/purv.dev/">
-  <img align="left" alt="Purv | Instagram" width="30" src="https://user-images.githubusercontent.com/83356501/129452050-d0157287-2350-4999-95b9-ea9e8a27639b.png" />
-</a>
-<a href="https://x.com/purvdev">
-  <img align="left" alt="Purv | X" width="30" src="https://www.svgrepo.com/show/475689/twitter-color.svg" />
-</a>
+Backend and ML engineer. Final-year CS at NIT Surat (SVNIT), graduating 2027.
 
-![Profile Views](https://komarev.com/ghpvc/?username=Purv-Kabaria&label=Views&color=1f6feb&style=flat)
-![Followers](https://img.shields.io/github/followers/Purv-Kabaria?label=Followers&style=flat&color=1f6feb)
-![Stars](https://img.shields.io/github/stars/Purv-Kabaria?affiliations=OWNER&style=flat&color=1f6feb)
+I build backend systems that hold up under load (job queues, real-time features, LLM pipelines) and ML models that hold up on data they haven't seen. Previously a founding engineer intern at [Career Passport](https://www.careerpassport.ai/) and an SDE intern at [Mercurium Analytics](https://mercurium-analytics.ai/).
 
-<br>
-Hi, I’m Purv Kabaria, an aspiring software developer exploring Machine Learning, GenAI and Agentic AI. I have participated in multiple hackathons all around the nation, and even organized a few. I have a strong background with Full Stack Development, DevOps and AI/ML. I enjoy collaborating with like-minded individual to create opportunities that push the boundaries of AI and human machine collaboration. Feel free to reach out via your favorite platform :)
+**Open to:** 6-month SDE / backend / ML internships from January 2027 (remote or on-site), and full-time roles.
 
-<br>
-<br>
-<br>
+### Selected work
 
-<p align="center">
-  <a href="https://skillicons.dev">
-<img src="https://go-skill-icons.vercel.app/api/icons?i=androidstudio,aws,bootstrap,c,celery,css,drizzle,django,docker,dynamodb,elasticsearch,expo,fastapi,figma,firebase,flask,gcp,git,github,githubactions,html,huggingface,java,js,langchain,mongodb,mysql,nextjs,nodejs,npm,ollama,opencv,postgres,postman,prisma,py,pygame,pytorch,qdrant,rabbitmq,react,redis,seaborn,selenium,sklearn,sqlite,streamlit,s3,tailwind,tensorflow,threejs,typescript,vercel,vite,vscode,vuejs&perline=14" />
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [PaperForge](https://paperforge.in) | Exam-paper generator with 1,200+ registered users. LLM-written questions compiled to print-ready LaTeX in English and Gujarati, each paper built in an isolated Docker sandbox. | Next.js, Firestore, Redis, Docker |
+| [AssetFlow](https://github.com/Purv-Kabaria/Odoo-2026) | Asset-management system. I built auth and role-based access, Ctrl+K search over Meilisearch, and real-time notifications over SSE and Redis pub/sub. | Next.js, Prisma, PostgreSQL, Redis |
+| [FinBridge](https://github.com/Purv-Kabaria/FinBridge) | Sales CRM with call transcription and sentiment. I built the INT8 ONNX sentiment model (3x faster on CPU), click-to-seek transcripts and Gmail/Meet follow-up automation. | FastAPI, ONNX, Whisper, BullMQ |
+| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hostable RAG split into 5 independently scalable services, with multimodal ingestion into Qdrant. | FastAPI, Qdrant, Redis, Docker |
+| [Jobs180](https://github.com/Purv-Kabaria/Jobs180) | Self-hostable job tracker with a versioned REST API, idempotency keys and rate limiting. | Java, Spring Boot, PostgreSQL, Redis |
 
-  </a>
-</p>
+### Competitions (code private until results are final)
 
-<h2>Purv's Contribution Graph<h2>
+- **EEG/EMG Foundation Challenge 2026, NeurIPS 2026 workshop** (solo): top 15 in Track 2, decoding EEG for people the model has never seen.
+- **Amazon ML Challenge 2026**: rank 94 of 19,900+ registrations, business entity resolution.
+- **Adani Powermind Hackathon**: winner, energy-demand forecasting at 1.54% MAPE ([repo](https://github.com/Purv-Kabaria/prometheus)).
 
-<p align="center">
-<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=Purv-Kabaria" />
-<br>
-<p>
+### Elsewhere
 
-<h2>GitHub Trophies<h2>
-
-<p align="center">
-<br>
-  <a href="https://github-readme-stats-sigma-five.vercel.app/api?username=Purv-Kabaria&show_icons=true&theme=tokyonight">
-    <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Purv-Kabaria&show_icons=true&theme=tokyonight" />
-  </a>
-  <a href="https://github-readme-streak-stats.herokuapp.com/?user=Purv-Kabaria&theme=tokyonight">
-    <img width="400" src="https://github-readme-streak-stats.herokuapp.com/?user=Purv-Kabaria&theme=tokyonight" />
-  </a>
-  <a href="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Purv-Kabaria&theme=dark&layout=compact">
-    <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Purv-Kabaria&theme=dark&layout=compact" /> 
-  </a>
-</p>
+[Portfolio](https://purvkabaria.netlify.app) · [LinkedIn](https://www.linkedin.com/in/purv-kabaria/) · [Codeforces](https://codeforces.com/profile/OldmanGalaxy) · [LeetCode](https://leetcode.com/u/oldmangalaxy/) · purvkabaria@gmail.com
