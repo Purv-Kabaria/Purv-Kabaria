@@ -45,7 +45,7 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 
 | | What | Why it's interesting |
 |---|---|---|
-| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hosted RAG over PDFs, scans, audio and video, split into 5 services | Retrieval benchmarked stage by stage (nDCG@10 0.706 to 0.724 on held-out questions), duplicate uploads cut from 17% of top results to 0%, and a queue where a crashed worker can't lose a document |
+| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hosted RAG over PDFs, scans, audio and video, split into 5 services | Retrieval benchmarked stage by stage (nDCG@10 0.706 to 0.724 on held-out questions), duplicate chunks cut from 17% of top results to 0%, and a queue where a crashed worker can't lose a document |
 | [FinBridge](https://github.com/Purv-Kabaria/FinBridge) | Offline-first lead capture and call review for field sales (team project) | INT8 sentiment model measured 2.74x faster on CPU with identical labels, and a check for when someone's tone contradicts their words |
 | [Business Entity Resolution](https://github.com/Purv-Kabaria/business-entity-resolution) | Amazon ML Challenge 2026, rank 94 of 19,900+ | Matching 10M messy records without comparing 6.7 trillion pairs, and a decision rule built around the metric |
 | [Jobs180](https://github.com/Purv-Kabaria/Jobs180) | Spring Boot job tracker | Ten concurrent retries of the same request create exactly one record, and there's a test that proves it |
