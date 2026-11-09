@@ -34,8 +34,6 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 [LeetCode](https://leetcode.com/u/oldmangalaxy/): **1550**, 503 solved
 <!-- competitive ends -->
 
-<sub>Ratings refresh daily from the judges' APIs ([build_readme.py](build_readme.py)).</sub>
-
 #### Currently learning and exploring
 
 - **Foundation models for brain signals:** decoding EEG for people a model has never seen, from Riemannian geometry to LoRA fine-tuning (my NeurIPS 2026 challenge entry)
