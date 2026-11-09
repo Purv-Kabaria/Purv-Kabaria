@@ -2,38 +2,30 @@
 
 I build the unglamorous parts of software that keep the glamorous parts alive: queues that don't lose jobs, retries that don't double-charge, and models whose accuracy survives contact with real data. Final-year CS at NIT Surat, founding engineer intern at [Career Passport](https://www.careerpassport.ai/) last summer, and occasionally found arguing with Codeforces about what "easy" means.
 
-**Open to:** 6-month SDE / backend / AI engineering internships from January 2027, remote or on-site · [resume](https://purvkabaria.netlify.app/resume.pdf)
+**Open to:** 6-month SDE / backend / AI engineering internships from January 2027, remote or on-site · [resume](https://purvkabaria.netlify.app/resume.pdf) · [portfolio](https://purvkabaria.netlify.app)
 
-<table><tr><td valign="top" width="40%">
+#### What I work with
 
-#### Recently shipped
-<!-- recent_work starts -->
-[prometheus](https://github.com/Purv-Kabaria/prometheus): Stop tracking create-next-app agent stubs - 2026-11-08
+| | |
+|---|---|
+| **Languages** | Python, TypeScript, JavaScript, Java, SQL, C++ |
+| **Backend** | Node.js, NestJS, FastAPI, Django, Spring Boot, REST APIs, Server-Sent Events |
+| **Queues and data** | PostgreSQL, Redis, BullMQ, Redis Streams, Prisma, Qdrant, Meilisearch, Firestore, MinIO |
+| **ML** | PyTorch, LightGBM, XGBoost, scikit-learn, Hugging Face Transformers, LoRA fine-tuning, ONNX Runtime |
+| **LLM systems** | RAG, hybrid retrieval, rerankers, embeddings, Langfuse, Ollama, Groq and Gemini APIs |
+| **Frontend** | Next.js, React, Tailwind CSS |
+| **Infra** | Docker, Linux, Git, GitHub Actions, AWS, SLURM on A100/H100 clusters |
 
-[AssetFlow](https://github.com/Purv-Kabaria/Odoo-2026): Stop tracking local AI-assistant config; README is the project… - 2026-11-08
+#### Achievements
 
-[FinBridge](https://github.com/Purv-Kabaria/FinBridge): Call analysis: INT8 sentiment on the real path, whole-call sentiment… - 2026-11-08
+- **Winner**, Adani Powermind Hackathon 2026 (team): energy-demand forecasting
+- **Rank 94** of 19,900+, Amazon ML Challenge 2026: entity resolution over 10M records
+- **Top 15** (solo), EEG/EMG Foundation Challenge, NeurIPS 2026 workshop
+- **Top 10** (solo), WWT Unravel 2026
+- **1st runner-up**, WebOsmotic AI/ML Hackathon 2025
+- **Top 100**, ZS Tech Challenge · finalist at 12 national hackathons
+- Chairperson, Cutting Edge Visionaries (Fintech Club), SVNIT · Developer, ACM SVNIT
 
-[business-entity-resolution](https://github.com/Purv-Kabaria/business-entity-resolution): Add documentation - 2026-11-06
-
-[Distributed-RAG](https://github.com/Purv-Kabaria/Distributed-RAG): chore: remove stray Redis dump - 2026-11-06
-<!-- recent_work ends -->
-</td><td valign="top" width="35%">
-
-#### Writing
-<!-- writing starts -->
-[Rank 94 at the Amazon ML Challenge, or: how not to compare 6.7 trillion pairs](https://purvkabaria.netlify.app/blog/amazon-ml-challenge-2026-entity-resolution) - 2026-11-09
-
-[We won the Adani Powermind Hackathon. My model was 4x worse than I thought.](https://purvkabaria.netlify.app/blog/adani-powermind-hackathon-energy-forecasting) - 2026-11-09
-
-[1st runner-up at WebOsmotic: round one banned AI, round two required it](https://purvkabaria.netlify.app/blog/webosmotic-ai-ml-hackathon-runner-up) - 2026-11-09
-
-[WWT Unravel 2026: a solo Top 10, and an interview that read my resume back to me](https://purvkabaria.netlify.app/blog/wwt-unravel-2026-top-10) - 2026-11-09
-<!-- writing ends -->
-More at [purvkabaria.netlify.app/blog](https://purvkabaria.netlify.app/blog)
-</td><td valign="top" width="25%">
-
-#### Ratings
 <!-- competitive starts -->
 [Codeforces](https://codeforces.com/profile/OldmanGalaxy): **1415**, Specialist (max 1415)
 
@@ -41,15 +33,21 @@ More at [purvkabaria.netlify.app/blog](https://purvkabaria.netlify.app/blog)
 
 [LeetCode](https://leetcode.com/u/oldmangalaxy/): **1550**, 503 solved
 <!-- competitive ends -->
-</td></tr></table>
 
-<sub>The three columns above rebuild themselves daily from GitHub, my blog's RSS feed and the judges' APIs ([build_readme.py](build_readme.py)). Idea borrowed from [simonw](https://github.com/simonw/simonw).</sub>
+<sub>Ratings refresh daily from the judges' APIs ([build_readme.py](build_readme.py)).</sub>
+
+#### Currently learning and exploring
+
+- **Foundation models for brain signals:** decoding EEG for people a model has never seen, from Riemannian geometry to LoRA fine-tuning (my NeurIPS 2026 challenge entry)
+- **Evaluating retrieval honestly:** benchmarking hybrid keyword + vector search and rerankers, instead of eyeballing answers
+- **Distributed job processing:** at-least-once delivery, idempotent consumers, and what actually happens when a worker dies mid-job
+- **Java and Spring Boot**, by building something with them rather than reading about them
 
 #### Things worth opening
 
 | | What | Why it's interesting |
 |---|---|---|
-| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hosted RAG over PDFs, scans, audio and video, split into 5 services | Hybrid keyword + vector retrieval with a published benchmark, and a job queue where a crashed worker can't lose or duplicate a document |
+| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hosted RAG over PDFs, scans, audio and video, split into 5 services | Hybrid keyword + vector retrieval, and a job queue where a crashed worker can't lose or duplicate a document |
 | [FinBridge](https://github.com/Purv-Kabaria/FinBridge) | Offline-first lead capture and call review for field sales (team project) | INT8 sentiment model measured 2.74x faster on CPU with identical labels, and a check for when someone's tone contradicts their words |
 | [Business Entity Resolution](https://github.com/Purv-Kabaria/business-entity-resolution) | Amazon ML Challenge 2026, rank 94 of 19,900+ | Matching 10M messy records without comparing 6.7 trillion pairs, and a decision rule built around the metric |
 | [Jobs180](https://github.com/Purv-Kabaria/Jobs180) | Spring Boot job tracker | Ten concurrent retries of the same request create exactly one record, and there's a test that proves it |

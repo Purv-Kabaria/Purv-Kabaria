@@ -1,4 +1,4 @@
-"""Rebuild the live sections of README.md.
+"""Refresh the live competitive-programming ratings in README.md.
 
 Run daily by .github/workflows/build.yml (pattern borrowed from simonw/simonw).
 Each section sits between <!-- name starts --> and <!-- name ends --> markers.
@@ -10,21 +10,13 @@ Standard library only.
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
 import urllib.request
-import xml.etree.ElementTree as ET
-from urllib.parse import urlparse
-from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 README = ROOT / "README.md"
-GH_USER = "Purv-Kabaria"
-SKIP_REPOS = {"Purv-Kabaria"}  # the profile repo commits to itself daily
-DISPLAY_NAMES = {"Odoo-2026": "AssetFlow"}  # repo name -> project name people know it by
-FEED = "https://purvkabaria.netlify.app/blog/rss.xml"
 CF_HANDLE = "OldmanGalaxy"
 CC_HANDLE = "oldmangalaxy"
 LC_HANDLE = "oldmangalaxy"
@@ -37,7 +29,6 @@ def fetch(url: str, data: bytes | None = None, headers: dict | None = None) -> b
         return r.read()
 
 
-ALLOWED_HOSTS = {"github.com", "purvkabaria.netlify.app"}
 
 
 def clean(text: str) -> str:
@@ -51,13 +42,6 @@ def clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def safe_link(url: str) -> str:
-    u = urlparse(url.strip())
-    if u.scheme != "https" or u.hostname not in ALLOWED_HOSTS:
-        raise ValueError(f"refusing link {url!r}")
-    return u.geturl()
-
-
 def replace_section(text: str, name: str, body: str) -> str:
     start, end = f"<!-- {name} starts -->", f"<!-- {name} ends -->"
     i = text.find(start)
@@ -68,64 +52,6 @@ def replace_section(text: str, name: str, body: str) -> str:
 
 
 # ── sections ─────────────────────────────────────────────────────────────────
-
-def shorten(text: str, limit: int = 72) -> str:
-    """Cut at a word boundary so a long commit subject never ends mid-word."""
-    if len(text) <= limit:
-        return text
-    return text[:limit].rsplit(" ", 1)[0].rstrip(",:;") + "…"
-
-
-def _gh(path: str):
-    headers = {"Accept": "application/vnd.github+json"}
-    if os.getenv("GITHUB_TOKEN"):
-        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
-    return json.loads(fetch(f"https://api.github.com{path}", headers=headers))
-
-
-def recent_work(limit: int = 5) -> str:
-    """Latest commit by me on each of my most recently pushed public repos.
-
-    (The events API stopped carrying commit messages in push events, so this asks
-    each repo for its newest commit instead.)
-    """
-    repos = _gh(f"/users/{GH_USER}/repos?sort=pushed&per_page=20&type=owner")
-    lines = []
-    for repo in repos:
-        if repo["name"] in SKIP_REPOS or repo.get("fork") or repo.get("private"):
-            continue
-        commits = _gh(f"/repos/{GH_USER}/{repo['name']}/commits?per_page=1&author={GH_USER}")
-        if not commits:
-            continue
-        c = commits[0]["commit"]
-        msg = shorten(clean(c["message"].splitlines()[0]))
-        day = c["author"]["date"][:10]
-        name = clean(DISPLAY_NAMES.get(repo["name"], repo["name"]))
-        lines.append(f"[{name}]({safe_link(repo['html_url'])}): {msg} - {clean(day)}")
-        if len(lines) == limit:
-            break
-    if not lines:
-        raise RuntimeError("no recent commits found")
-    return "\n\n".join(lines)
-
-
-def writing(limit: int = 5) -> str:
-    # The feed is my own static site. ElementTree never resolves external entities,
-    # and the expat bundled with Python 3.12 (used by the workflow) caps entity
-    # expansion, so defusedxml would add a dependency for no real protection here.
-    root = ET.fromstring(fetch(FEED))
-    lines = []
-    for item in root.iter("item"):
-        title = clean(item.findtext("title", ""))
-        link = safe_link(item.findtext("link", ""))
-        date = datetime.strptime(item.findtext("pubDate", "").strip(), "%a, %d %b %Y %H:%M:%S %Z").date()
-        lines.append(f"[{title}]({link}) - {date.isoformat()}")
-        if len(lines) == limit:
-            break
-    if not lines:
-        raise RuntimeError("feed has no items")
-    return "\n\n".join(lines)
-
 
 def codeforces() -> str:
     r = json.loads(fetch(f"https://codeforces.com/api/user.info?handles={CF_HANDLE}"))["result"][0]
@@ -171,8 +97,6 @@ def current_section(text: str, name: str) -> str:
 def main() -> None:
     text = README.read_text(encoding="utf-8")
     builders = {
-        "recent_work": recent_work,
-        "writing": writing,
         "competitive": lambda: competitive(current_section(text, "competitive")),
     }
     for name, build in builders.items():
