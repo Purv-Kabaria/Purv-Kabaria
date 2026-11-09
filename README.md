@@ -14,7 +14,7 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 | **ML** | PyTorch, LightGBM, XGBoost, scikit-learn, Hugging Face Transformers, LoRA fine-tuning, ONNX Runtime |
 | **LLM systems** | RAG, hybrid retrieval, rerankers, embeddings, Langfuse, Ollama, Groq and Gemini APIs |
 | **Frontend** | Next.js, React, Tailwind CSS |
-| **Infra** | Docker, Linux, Git, GitHub Actions, AWS, SLURM on A100/H100 clusters |
+| **Infra** | Docker, Linux, Git, GitHub Actions, SLURM on A100/H100 clusters |
 
 #### Achievements
 
