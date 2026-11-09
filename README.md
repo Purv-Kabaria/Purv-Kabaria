@@ -10,11 +10,11 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 |---|---|
 | **Languages** | Python, TypeScript, JavaScript, Java, SQL, C++ |
 | **Backend** | Node.js, NestJS, FastAPI, Django, Spring Boot, REST APIs, Server-Sent Events |
-| **Queues and data** | PostgreSQL, Redis, BullMQ, Redis Streams, Prisma, Qdrant, Meilisearch, Firestore, MinIO |
+| **Queues and data** | PostgreSQL, MongoDB, Redis, BullMQ, Redis Streams, Prisma, Qdrant, Meilisearch, Firestore, MinIO |
 | **ML** | PyTorch, LightGBM, XGBoost, scikit-learn, Hugging Face Transformers, LoRA fine-tuning, ONNX Runtime |
-| **LLM systems** | RAG, hybrid retrieval, rerankers, embeddings, Langfuse, Ollama, Groq and Gemini APIs |
+| **LLM systems** | RAG, retrieval evaluation, rerankers, embeddings, Langfuse, LangChain, Ollama, Groq and Gemini APIs |
 | **Frontend** | Next.js, React, Tailwind CSS |
-| **Infra** | Docker, Linux, Git, GitHub Actions, SLURM on A100/H100 clusters |
+| **Infra** | Docker, Linux, Git, GitHub Actions, AWS, GCP, SLURM on A100/H100 clusters |
 
 #### Achievements
 
@@ -37,7 +37,7 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 #### Currently learning and exploring
 
 - **Foundation models for brain signals:** decoding EEG for people a model has never seen, from Riemannian geometry to LoRA fine-tuning (my NeurIPS 2026 challenge entry)
-- **Evaluating retrieval honestly:** benchmarking hybrid keyword + vector search and rerankers, instead of eyeballing answers
+- **Evaluating retrieval honestly:** benchmarking every stage of a RAG pipeline on held-out questions (keyword fusion lost, so it shipped off)
 - **Distributed job processing:** at-least-once delivery, idempotent consumers, and what actually happens when a worker dies mid-job
 - **Java and Spring Boot**, by building something with them rather than reading about them
 
@@ -45,7 +45,7 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 
 | | What | Why it's interesting |
 |---|---|---|
-| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hosted RAG over PDFs, scans, audio and video, split into 5 services | Hybrid keyword + vector retrieval, and a job queue where a crashed worker can't lose or duplicate a document |
+| [Distributed RAG](https://github.com/Purv-Kabaria/Distributed-RAG) | Self-hosted RAG over PDFs, scans, audio and video, split into 5 services | Retrieval benchmarked stage by stage (nDCG@10 0.706 to 0.724 on held-out questions), duplicate uploads cut from 17% of top results to 0%, and a queue where a crashed worker can't lose a document |
 | [FinBridge](https://github.com/Purv-Kabaria/FinBridge) | Offline-first lead capture and call review for field sales (team project) | INT8 sentiment model measured 2.74x faster on CPU with identical labels, and a check for when someone's tone contradicts their words |
 | [Business Entity Resolution](https://github.com/Purv-Kabaria/business-entity-resolution) | Amazon ML Challenge 2026, rank 94 of 19,900+ | Matching 10M messy records without comparing 6.7 trillion pairs, and a decision rule built around the metric |
 | [Jobs180](https://github.com/Purv-Kabaria/Jobs180) | Spring Boot job tracker | Ten concurrent retries of the same request create exactly one record, and there's a test that proves it |
