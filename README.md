@@ -31,7 +31,7 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 
 [CodeChef](https://www.codechef.com/users/oldmangalaxy): **1669**, 3★ (max 1669)
 
-[LeetCode](https://leetcode.com/u/oldmangalaxy/): **1550**, 507 solved
+[LeetCode](https://leetcode.com/u/oldmangalaxy/): **1550**, 514 solved
 <!-- competitive ends -->
 
 #### Currently learning and exploring
