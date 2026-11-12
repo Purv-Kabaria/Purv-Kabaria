@@ -29,7 +29,7 @@ I build the unglamorous parts of software that keep the glamorous parts alive: q
 <!-- competitive starts -->
 [Codeforces](https://codeforces.com/profile/OldmanGalaxy): **1415**, Specialist (max 1415)
 
-[CodeChef](https://www.codechef.com/users/oldmangalaxy): **1669**, 3★ (max 1669)
+[CodeChef](https://www.codechef.com/users/oldmangalaxy): **1679**, 3★ (max 1679)
 
 [LeetCode](https://leetcode.com/u/oldmangalaxy/): **1550**, 514 solved
 <!-- competitive ends -->
